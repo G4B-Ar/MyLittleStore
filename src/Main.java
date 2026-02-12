@@ -10,8 +10,8 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Bem vindo a minha loja, aventureiro! Agora online! maneiro, né?");
-        System.out.println("Ó, armas e armaduras são pesadas e é só eu que entrago tudo... Então,tem uma taxa.\n");
+        System.out.println("Bem vindo a minha loja, aventureiro! Agora online! Maneiro, né?!");
+        System.out.println("Ó, armas e armaduras são pesadas e é só eu que entrego tudo... Então,tem uma taxa.\n");
 
         List<Items> loja = new ArrayList<>();
         loja.add(new ProdutoFisico("Espada de ferro",90,0.6));

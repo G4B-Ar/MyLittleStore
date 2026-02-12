@@ -2,23 +2,23 @@ package internals;
 
 public class ProdutoFisico extends Items {
 
-    private double taxaEntrega;
+    private double percentualEntrega;
 
-    public ProdutoFisico(String nomeItem, double preco, double taxaEntrega) {
+    public ProdutoFisico(String nomeItem, double preco, double percentualEntrega) {
         super(nomeItem, preco);
-        this.taxaEntrega = taxaEntrega;
+        this.percentualEntrega = percentualEntrega;
     }
 
     public double getTaxaEntrega() {
-        return taxaEntrega;
+        return percentualEntrega;
     }
 
     public double calcularTaxaEntrega() {
-        return getPreco() * this.taxaEntrega;
+        return getPreco() * percentualEntrega;
     }
 
     @Override
     public double calcularPrecoFinal() {
-        return getPreco() + taxaEntrega;
+        return getPreco() + calcularTaxaEntrega();
     }
 }
